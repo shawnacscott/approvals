@@ -5,6 +5,7 @@ require 'approvals/writers/html_writer'
 require 'approvals/writers/xml_writer'
 require 'approvals/writers/json_writer'
 require 'approvals/writers/binary_writer'
+require 'approvals/writers/custom_writer'
 
 module Approvals
   module Writer
@@ -16,6 +17,7 @@ module Approvals
       html: Writers::HtmlWriter.new,
       hash: Writers::HashWriter.new,
       array: Writers::ArrayWriter.new,
+      custom: Writers::CustomWriter.new,
     }
 
 
